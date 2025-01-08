@@ -1,2 +1,2 @@
 # Pedro González Fernández
-Fullstack developer.
+Fullstack developer
