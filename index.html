@@ -3,14 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedro González Fernández</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Pedro González Fernández</h1>
-    <h4>Fullstack developer</h4>
-    <p>
-      Welcome to my portfolio! Here you'll find relevant information about me,
-      such as my projects or the studies I carried out.
-    </p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Portfolio Sections -->
+    <div class="container">
+      <section id="home" class="section section1">
+        <div class="content">
+          <h1>👋 Hello, I'm Pedro</h1>
+          <p>Scroll to know more about me!</p>
+        </div>
+      </section>
+
+      <section id="about" class="section section2">
+        <div class="content">
+          <h1>📖 About Me</h1>
+          <p>
+            I'm Pedro, a Software Developer with certifications in Web
+            Application Development and Multiplatform Application Development,
+            as well as in Microcomputer Systems and Networks. I am currently
+            expanding my knowledge in Cybersecurity in IT Environments.
+          </p>
+          <p>
+            Additionally, I have developed several projects during my learning
+            journey, such as PokéSearch, OrdePlay, or GoTravel, which you can
+            explore in my <a href="#projects">projects</a> section.
+          </p>
+          <p>
+            My passion for programming and new technologies drives me to
+            continuously learn and stay up-to-date with the latest trends in the
+            field.
+          </p>
+          <p>
+            I'm currently enrolled in the Specialization Course in Cybersecurity
+            in IT Environments at I.E.S. Zaidín-Vergeles, in Granada, Spain. My
+            goal is to continue growing professionally and acquiring new skills
+            to tackle future challenges in this exciting field.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section3">
+        <div class="content">
+          <h1>🛠️ Skills</h1>
+          <p>I have experience in several skills, such as:</p>
+
+          <div class="skills-container">
+            <div class="skill">
+              <h3>Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Kotlin</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Markdown</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Flutter</li>
+                <li>Spring Boot</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Databases</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Operating Systems</h3>
+              <ul>
+                <li>Windows 10/11</li>
+                <li>Linux Based OS</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Other Tools</h3>
+              <ul>
+                <li>Docker</li>
+                <li>Apache Web Server</li>
+                <li>Jira</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section4">
+        <div class="content">
+          <h1>💼 Projects</h1>
+          <p>Here are some of my most recent works.</p>
+
+          <div class="projects-container">
+            <div class="project">
+              <h3>GoTravel</h3>
+              <p>
+                Desktop & Mobile App for booking services offered by other
+                users. Designed to run in Android and Windows, developed with
+                Java, Spring, and JavaFX. Integrates with PayPal APIs (in
+                sandbox mode) and email sending APIs.
+              </p>
+              <a href="https://github.com/Pedrogf03/GoTravel" target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>PokéSearch</h3>
+              <p>
+                Cross-platform App for search info about Pokémon. Developed in
+                Flutter and integrates Pokémon API PokeApi.
+              </p>
+              <a href="https://github.com/Pedrogf03/PokeSearch" target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>TrophyHunter (Still on development)</h3>
+              <p>
+                Web application that allows users to track their trophy progress
+                in games. Developed in Java with Spring, and HTML and CSS.
+              </p>
+              <a
+                href="https://github.com/Pedrogf03/trophyhunter-frontend"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>OrdePlay</h3>
+              <p>
+                Web Application for purchasing video games online. Also allows
+                users to create personalized game lists. Developed with HTML,
+                CSS, PHP, JS, jQuery, and Ajax.
+              </p>
+              <a href="https://github.com/Pedrogf03/OrdePlay" target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>TicketSearch</h3>
+              <p>
+                Web Application for searching Tickets in different pages.
+                Developed in PHP.
+              </p>
+              <a
+                href="https://github.com/Pedrogf03/TicketSearch"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section5">
+        <div class="content">
+          <h1>📜 Experience</h1>
+          <p>I have worked in various companies and freelance projects.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section section6">
+        <div class="content">
+          <h1>🗣️ Testimonials</h1>
+          <p>What clients and colleagues say about my work.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section section7">
+        <div class="content">
+          <h1>📩 Contact</h1>
+          <p>Feel free to reach out via email or social media.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Flecha hacia abajo -->
+    <a href="#about" class="scroll-arrow" id="scrollArrow"> ⬇️ </a>
   </body>
 </html>

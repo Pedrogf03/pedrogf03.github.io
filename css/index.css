@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 12px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #bbb;
+}
+
+.container {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+  /* Eliminar scroll-snap-type para evitar el "snap" a la siguiente sección */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Para permitir ver el scrollbar */
+}
+
+.container {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+}
+
+.section {
+  width: 100vw;
+  min-height: 100vh; /* Asegura que las secciones siempre tengan al menos el tamaño de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 60px;
+  /* Eliminar scroll-snap-align de las secciones */
+}
+
+.section1 {
+  background: #111;
+}
+
+.section2 {
+  background: #222;
+}
+
+.section3 {
+  background: #333;
+}
+
+.section4 {
+  background: #444;
+}
+
+.section5 {
+  background: #555;
+}
+
+.section6 {
+  background: #666;
+}
+
+.section7 {
+  background: #777;
+}
+
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  border: none;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.scroll-arrow:hover {
+  background-color: #ff6600;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+#about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#about ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+#about strong {
+  font-weight: 600;
+}
+
+#about a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#about a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+#about .content {
+  max-width: 800px;
+}
+
+#skills {
+  padding: 50px 0;
+}
+
+#skills .content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#skills p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill {
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skill ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#projects {
+  padding: 50px 0;
+}
+
+#projects .content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#projects p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.project {
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.project p {
+  font-size: 0.1em;
+}
