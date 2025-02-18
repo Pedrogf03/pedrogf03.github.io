@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let nextSectionIndex = currentSectionIndex + 1;
     if (nextSectionIndex >= sections.length) {
-      nextSectionIndex = 0; // Si es la última sección, vuelve arriba
+      nextSectionIndex = 0;
     }
 
     sections[nextSectionIndex].scrollIntoView({ behavior: "smooth" });
