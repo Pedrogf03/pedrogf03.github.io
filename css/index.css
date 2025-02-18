@@ -58,7 +58,7 @@
 
 .section {
   width: 100vw;
-  min-height: 100vh; /* Asegura que las secciones siempre tengan al menos el tamaño de la pantalla */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,19 +66,22 @@
   font-size: 2rem;
   color: #fff;
   padding-top: 60px;
-  /* Eliminar scroll-snap-align de las secciones */
+}
+
+.content {
+  max-width: 80%;
 }
 
 .section1 {
-  background: #111;
+  background: #777;
 }
 
 .section2 {
-  background: #222;
+  background: #666;
 }
 
 .section3 {
-  background: #333;
+  background: #555;
 }
 
 .section4 {
@@ -86,15 +89,15 @@
 }
 
 .section5 {
-  background: #555;
+  background: #333;
 }
 
 .section6 {
-  background: #666;
+  background: #222;
 }
 
 .section7 {
-  background: #777;
+  background: #111;
 }
 
 .scroll-arrow {
@@ -107,12 +110,12 @@
   text-decoration: none;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   z-index: 100;
 }
 
 .scroll-arrow:hover {
-  background-color: #ff6600;
+  font-size: 3.5rem;
 }
 
 #about p {
@@ -144,10 +147,6 @@
 #about a:hover {
   color: #ff6600;
   text-decoration: underline;
-}
-
-#about .content {
-  max-width: 800px;
 }
 
 #skills {
