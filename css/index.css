@@ -40,6 +40,12 @@
   color: #bbb;
 }
 
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .container {
   overflow-y: scroll;
   height: 100vh;
