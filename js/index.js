@@ -6,18 +6,29 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     let currentSectionIndex = -1;
+    let minDistance = Infinity;
+
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top >= 0 && rect.top < window.innerHeight) {
+      const distance = Math.abs(rect.top);
+
+      if (distance < minDistance) {
+        minDistance = distance;
         currentSectionIndex = index;
       }
     });
 
-    let nextSectionIndex = currentSectionIndex + 1;
-    if (nextSectionIndex >= sections.length) {
-      nextSectionIndex = 0;
-    }
+    const currentSection = sections[currentSectionIndex];
+    const rect = currentSection.getBoundingClientRect();
 
-    sections[nextSectionIndex].scrollIntoView({ behavior: "smooth" });
+    if (rect.bottom > window.innerHeight) {
+      currentSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    } else {
+      let nextSectionIndex = currentSectionIndex + 1;
+      if (nextSectionIndex >= sections.length) {
+        nextSectionIndex = 0;
+      }
+      sections[nextSectionIndex].scrollIntoView({ behavior: "smooth" });
+    }
   });
 });

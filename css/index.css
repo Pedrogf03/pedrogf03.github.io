@@ -45,7 +45,6 @@
 .container {
   overflow-y: scroll;
   height: 100vh;
-  scroll-behavior: smooth;
   scrollbar-width: auto;
   -ms-overflow-style: auto;
 }
@@ -304,4 +303,102 @@
 }
 .scroll-arrow:hover {
   font-size: 3.5rem;
+}
+
+#experience {
+  padding: 50px 0;
+}
+#experience .content {
+  text-align: center;
+  margin: 0 auto;
+}
+#experience h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#experience p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+.exp {
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+.exp:hover {
+  transform: scale(1.05);
+}
+.exp h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.main-list {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.sub-list {
+  font-size: 0.9rem;
+  padding-left: 30px;
+}
+
+#testimonials {
+  padding: 50px 0;
+}
+#testimonials .content {
+  text-align: center;
+  margin: 0 auto;
+}
+#testimonials h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#testimonials p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+.testimonial {
+  background-color: #ccc;
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+.testimonial:hover,
+.testimonial img:hover {
+  transform: scale(1.05);
+}
+.testimonial h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
 }
