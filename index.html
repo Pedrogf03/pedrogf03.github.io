@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Know more about me!</title>
+    <title data-key="doc_title">Portfolio de Pedro González</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="resources/favicon.png" />
-    <script src="js/index.js"></script>
+    
+    <script src="js/translations.js" defer></script>
+    <script src="js/index.js" defer></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -18,77 +21,87 @@
   </head>
   <body>
     <nav class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <a href="#home" class="nav-logo" data-key="nav_logo"></a>
+
+      <ul class="nav-links">
+        <li><a href="#home" data-key="nav_home"></a></li>
+        <li><a href="#about" data-key="nav_about"></a></li>
+        <li><a href="#skills" data-key="nav_skills"></a></li>
+        <li><a href="#projects" data-key="nav_projects"></a></li>
+        <li><a href="#experience" data-key="nav_experience"></a></li>
+        <li><a href="#testimonials" data-key="nav_testimonials"></a></li>
+        <li><a href="#contact" data-key="nav_contact"></a></li>
       </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
 
     <div class="container">
-      <section id="home" class="section section1">
+      <section id="home" class="section section-home">
         <div class="content">
-          <h1><span class="emoji">👋</span> Hello, I'm Pedro</h1>
-          <p>Scroll to know more about me!</p>
+          <h1><span class="emoji">👋</span> <span data-key="home_greeting"></span></h1>
+          <p data-key="home_subtitle"></p>
+          <a href="#projects" class="button cta-button" data-key="home_cta_button"></a>
         </div>
       </section>
 
-      <section id="about" class="section section2">
+      <section id="about" class="section">
         <div class="content">
-          <h1><span class="emoji">📖</span> About Me</h1>
-          <p>
-            I’m a software developer with a strong foundation in Java, Spring Boot, and SQL databases, complemented by experience in Flutter and cross-platform development. I focus on building scalable, maintainable applications with clean architecture and high-quality code.
-          </p>
-          <p>
-            I’ve gained hands-on experience at Sipos, KnowmadMood, and Trace, working on real-world projects involving backend maintenance and development, issue resolution, automated testing, and performance optimization.
-          </p>
-          <p>
-            Currently, I’m pursuing a specialization in Artificial Intelligence and Big Data, after completing one in Cybersecurity, which enhances my holistic understanding of secure and data-driven software development.
-          </p>
-          <p>
-            I’m results-oriented, analytical, and passionate about continuous improvement. I’m seeking an opportunity to grow as a backend or full-stack developer, contributing solid technical solutions and a proactive mindset.
-          </p>
-           <p>
-            🏆 Notable achievements include ranking 10th nationally at ProgramaMe 2024 and 2nd place at the SpainSkills 2023 regional stage.
-          </p>
+          <h1><span class="emoji">📖</span> <span data-key="about_title"></span></h1>
+          <p data-key="about_p1"></p>
+          <p data-key="about_p2"></p>
+          <p data-key="about_p3"></p>
+          <p data-key="about_p4"></p>
+          <p data-key="about_p5"></p>
         </div>
       </section>
 
-      <section id="skills" class="section section3">
+      <section id="skills" class="section">
         <div class="content">
-          <h1><span class="emoji">⚙️</span> Skills</h1>
-          <p>I have experience in several skills, such as:</p>
+          <h1><span class="emoji">⚙️</span> <span data-key="skills_title"></span></h1>
+          <p data-key="skills_subtitle"></p>
 
           <div class="skills-container">
             <div class="skill">
-              <h3>Languages</h3>
+              <h3 data-key="skills_card1_title"></h3>
+              <ul>
+                <li>Python</li>
+                <li>Pandas & NumPy</li>
+                <li>Scikit-learn</li>
+                <li>Kafka</li>
+                <li>NiFi</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3 data-key="skills_card2_title"></h3>
               <ul>
                 <li>Java</li>
-                <li>PHP</li>
                 <li>Kotlin</li>
                 <li>Python</li>
+                <li>PHP</li>
                 <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Markdown</li>
+                <li>HTML & CSS</li>
               </ul>
             </div>
 
             <div class="skill">
-              <h3>Frameworks</h3>
+              <h3 data-key="skills_card3_title"></h3>
               <ul>
-                <li>Flutter</li>
                 <li>Spring Boot</li>
+                <li>Flutter</li>
                 <li>Bootstrap</li>
+                <li>JavaFX</li>
               </ul>
             </div>
 
             <div class="skill">
-              <h3>Databases</h3>
+              <h3 data-key="skills_card4_title"></h3>
               <ul>
                 <li>MySQL</li>
                 <li>PostgreSQL</li>
@@ -97,205 +110,148 @@
             </div>
 
             <div class="skill">
-              <h3>Operating Systems</h3>
-              <ul>
-                <li>Windows 10/11</li>
-                <li>Linux Based OS</li>
-              </ul>
-            </div>
-
-            <div class="skill">
-              <h3>Other Tools</h3>
+              <h3 data-key="skills_card5_title"></h3>
               <ul>
                 <li>Docker</li>
-                <li>Apache Web Server</li>
+                <li>Git & Bitbucket</li>
                 <li>Jira</li>
-                <li>Kafka</li>
-                <li>NiFi</li>
+                <li>Apache Web Server</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section section4">
+      <section id="projects" class="section">
         <div class="content">
-          <h1><span class="emoji">💼</span> Projects</h1>
-          <p>Here are some of my most recent works.</p>
+          <h1><span class="emoji">💼</span> <span data-key="projects_title"></span></h1>
+          <p data-key="projects_subtitle"></p>
 
           <div class="projects-container">
             <div class="project">
-              <h3>GoTravel</h3>
-              <p>
-                Desktop & Mobile App for booking services offered by other
-                users. Designed to run in Android and Windows, developed with
-                Java, Spring, and JavaFX. Integrates with PayPal APIs (in
-                sandbox mode) and email sending APIs.
-              </p>
-              <a href="https://github.com/Pedrogf03/GoTravel" target="_blank">
-                <button class="button">
-                  View on GitHub
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+              <h3 data-key="project_gotravel_title"></h3>
+              <p data-key="project_gotravel_desc"></p>
+              <p class="stack" data-key="project_gotravel_stack"></p>
+              <a
+                href="https://github.com/Pedrogf03/GoTravel"
+                target="_blank"
+                class="button"
+                data-key="project_button_text"
+              >
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
               </a>
             </div>
 
             <div class="project">
-              <h3>PokéSearch</h3>
-              <p>
-                Cross-platform App for search info about Pokémon. Developed in
-                Flutter and integrates Pokémon API PokeApi.
-              </p>
+              <h3 data-key="project_pokesearch_title"></h3>
+              <p data-key="project_pokesearch_desc"></p>
+              <p class="stack" data-key="project_pokesearch_stack"></p>
               <a
                 href="https://github.com/Pedrogf03/PokeSearch/tree/v2"
                 target="_blank"
+                class="button"
+                data-key="project_button_text"
               >
-                <button class="button">
-                  View on GitHub
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
               </a>
             </div>
 
             <div class="project">
-              <h3>TrophyHunter (Still on development)</h3>
-              <p>
-                Web application that allows users to track their trophy progress
-                in games. Developed in Java with Spring, and HTML and CSS.
-              </p>
+              <h3 data-key="project_hangman_title"></h3>
+              <p data-key="project_hangman_desc"></p>
+              <p class="stack" data-key="project_hangman_stack"></p>
               <a
-                href="https://github.com/Pedrogf03/trophyhunter-frontend"
+                href="https://github.com/Pedrogf03/Java-Socket-Hangman"
                 target="_blank"
+                class="button"
+                data-key="project_button_text"
               >
-                <button class="button">
-                  View on GitHub
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
               </a>
             </div>
 
             <div class="project">
-              <h3>OrdePlay</h3>
-              <p>
-                Web Application for purchasing video games online. Also allows
-                users to create personalized game lists. Developed with HTML,
-                CSS, PHP, JS, jQuery, and Ajax.
-              </p>
-              <a href="https://github.com/Pedrogf03/OrdePlay" target="_blank">
-                <button class="button">
-                  View on GitHub
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </a>
-            </div>
-
-            <div class="project">
-              <h3>TicketSearch</h3>
-              <p>
-                Web Application for searching Tickets in different pages.
-                Developed in PHP.
-              </p>
+              <h3 data-key="project_ordeplay_title"></h3>
+              <p data-key="project_ordeplay_desc"></p>
+              <p class="stack" data-key="project_ordeplay_stack"></p>
               <a
-                href="https://github.com/Pedrogf03/TicketSearch"
+                href="https://github.com/Pedrogf03/OrdePlay"
                 target="_blank"
+                class="button"
+                data-key="project_button_text"
               >
-                <button class="button">
-                  View on GitHub
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                    <path
-                      clip-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="section section5">
+      <section id="experience" class="section">
         <div class="content">
-          <h1><span class="emoji">📜</span> Experience</h1>
-          <p>I have worked in various companies, such as:</p>
+          <h1><span class="emoji">📜</span> <span data-key="exp_title"></span></h1>
+          <p data-key="exp_subtitle"></p>
 
           <div class="experience-container">
             <div class="exp">
-              <h3>Flutter Junior Developer</h3>
+              <h3 data-key="exp1_title"></h3>
               <ul class="main-list">
-                <li>Sipos</li>
-                <li>Chiclana de la Frontera, Andalusia, Spain (Hybrid)</li>
-                <li>Sept. 2024 - Jun. 2025</li>
+                <li data-key="exp1_company"></li>
+                <li data-key="exp1_date"></li>
                 <ul class="sub-list">
-                  <li>App development in Flutter</li>
-                  <li>Bitbucket for version control</li>
-                  <li>Worked with databases</li>
-                  <li>App test development</li>
+                  <li data-key="exp1_d1"></li>
+                  <li data-key="exp1_d2"></li>
+                  <li data-key="exp1_d3"></li>
+                  <li data-key="exp1_d4"></li>
                 </ul>
               </ul>
             </div>
 
             <div class="exp">
-              <h3>Java Junior Developer</h3>
+              <h3 data-key="exp2_title"></h3>
               <ul class="main-list">
-                <li>Knowmad Mood</li>
-                <li>Jerez, Andalusia, Spain (Remote)</li>
-                <li>Mar. 2024 - Jun. 2024</li>
+                <li data-key="exp2_company"></li>
+                <li data-key="exp2_date"></li>
                 <ul class="sub-list">
-                  <li>App development in Java & Spring Boot</li>
-                  <li>SQL Scripts development</li>
-                  <li>Worked with databases</li>
+                  <li data-key="exp2_d1"></li>
+                  <li data-key="exp2_d2"></li>
+                  <li data-key="exp2_d3"></li>
                 </ul>
               </ul>
             </div>
 
             <div class="exp">
-              <h3>VBA Access Junior Developer</h3>
+              <h3 data-key="exp3_title"></h3>
               <ul class="main-list">
-                <li>Trace</li>
-                <li>Ceuta, Spain</li>
-                <li>Mar. 2023 - Jun. 2023</li>
+                <li data-key="exp3_company"></li>
+                <li data-key="exp3_date"></li>
                 <ul class="sub-list">
-                  <li>App development using VBA in Access</li>
-                  <li>Worked with databases</li>
-                </ul>
-              </ul>
-            </div>
-
-            <div class="exp">
-              <h3>Junior Systems Technician</h3>
-              <ul class="main-list">
-                <li>T.S.I. Ceuta</li>
-                <li>Ceuta, Spain</li>
-                <li>Mar. 2019 - Jun. 2019</li>
-                <ul class="sub-list">
-                  <li>Managed and maintained databases</li>
-                  <li>Technical support and troubleshooting</li>
+                  <li data-key="exp3_d1"></li>
+                  <li data-key="exp3_d2"></li>
                 </ul>
               </ul>
             </div>
@@ -303,10 +259,10 @@
         </div>
       </section>
 
-      <section id="testimonials" class="section section6">
+      <section id="testimonials" class="section">
         <div class="content">
-          <h1><span class="emoji">🗣️</span> Testimonials</h1>
-          <p>What clients and colleagues say about my work:</p>
+          <h1><span class="emoji">🗣️</span> <span data-key="test_title"></span></h1>
+          <p data-key="test_subtitle"></p>
 
           <div class="testimonials-container">
             <div class="testimonial">
@@ -315,23 +271,34 @@
                 alt="Knowmad Mood Logo"
                 width="200"
               />
-              <h3>Recommendation Letter</h3>
-              <a href="resources/RecommendationLetter.pdf" target="_blank">
-                <img
-                  src="resources/RecommendationThumbnail.png"
-                  alt="PDF Thumbnail"
-                  width="300"
-                />
+              <blockquote>
+                <p data-key="test1_quote"></p>
+                <cite data-key="test1_cite"></cite>
+              </blockquote>
+              <a
+                href="resources/RecommendationLetter.pdf"
+                target="_blank"
+                class="button"
+                data-key="test1_button"
+              >
               </a>
+            </div>
+
+            <div class="testimonial">
+              <i class="fas fa-user-shield testimonial-icon"></i>
+              <blockquote>
+                <p data-key="test2_quote"></p>
+                <cite data-key="test2_cite"></cite>
+              </blockquote>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section section7">
+      <section id="contact" class="section">
         <div class="content">
-          <h1><span class="emoji">📩</span> Contact</h1>
-          <p>Feel free to reach out via email or social media:</p>
+          <h1><span class="emoji">📩</span> <span data-key="contact_title"></span></h1>
+          <p data-key="contact_subtitle"></p>
 
           <div class="contact-container">
             <div class="social-links">
@@ -340,18 +307,26 @@
                   <a
                     href="https://www.linkedin.com/in/pedro-gonzalez-fernandez-71693b2ba/"
                     target="_blank"
+                    class="social-link-linkedin"
                   >
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    <i class="fa-brands fa-linkedin"></i> <span data-key="contact_linkedin"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/Pedrogf03" target="_blank">
-                    <i class="fa-brands fa-github"></i> GitHub
+                  <a
+                    href="https://github.com/Pedrogf03"
+                    target="_blank"
+                    class="social-link-github"
+                  >
+                    <i class="fa-brands fa-github"></i> <span data-key="contact_github"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:pedrogf389@gmail.com">
-                    <i class="fa-solid fa-envelope"></i> Email
+                  <a
+                    href="mailto:pedrogf389@gmail.com"
+                    class="social-link-email"
+                  >
+                    <i class="fa-solid fa-envelope"></i> <span data-key="contact_email"></span>
                   </a>
                 </li>
               </ul>
