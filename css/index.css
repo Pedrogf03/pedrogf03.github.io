@@ -1,9 +1,9 @@
 /* --- Variables Globales y Reseteo --- */
 :root {
-  --background-color: #121212; /* Negro/Gris muy oscuro */
-  --card-color: #1e1e1e; /* Gris oscuro para tarjetas */
-  --font-color: #f1f1f1; /* Blanco hueso */
-  --accent-color: #03dac6; /* Verde azulado (Teal) */
+  --background-color: #121212;
+  --card-color: #1e1e1e;
+  --font-color: #f1f1f1;
+  --accent-color: #03dac6;
   --accent-color-dark: #018786;
   --navbar-height: 60px;
 }
@@ -19,7 +19,7 @@
 body {
   background-color: var(--background-color);
   color: var(--font-color);
-  overflow-x: hidden; /* Previene scroll horizontal */
+  overflow-x: hidden;
 }
 
 h1,
@@ -35,11 +35,11 @@ h3 {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Alinea logo a la izq, links a la der */
+  justify-content: space-between;
   align-items: center;
   background: rgba(30, 30, 30, 0.95);
   backdrop-filter: blur(5px);
-  padding: 0 5%; /* Padding horizontal */
+  padding: 0 5%;
   height: var(--navbar-height);
   text-align: center;
   z-index: 1000;
@@ -94,20 +94,20 @@ h3 {
 
 .section {
   width: 100vw;
-  min-height: 90vh; /* Altura mínima, pero puede crecer */
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 2rem;
-  padding: 120px 20px; /* Padding arriba/abajo y a los lados */
+  padding: 120px 20px;
 }
 .content {
   max-width: 1100px;
   width: 90%;
 }
 
-/* Sección 1 (Home) - la dejamos a 100vh */
+/* Sección 1 (Home) */
 .section-home {
   min-height: 100vh;
   background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)),
@@ -136,20 +136,28 @@ h3 {
 }
 
 @keyframes wave {
-  0%, 50%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(15deg); }
-  75% { transform: rotate(-15deg); }
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
 /* --- Sección 2 (About Me) --- */
 #about .content {
-  max-width: 800px; /* Más ancho para mejor lectura */
+  max-width: 800px;
 }
 #about p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin: 15px 0;
-  text-align: left; /* Alineado a la izquierda */
+  text-align: left;
   color: #ccc;
 }
 #about p strong {
@@ -162,9 +170,17 @@ h3 {
 }
 
 @keyframes bounce {
-  0%, 50%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-10px); }
-  75% { transform: translateY(-5px); }
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
 }
 
 /* --- Sección 3 (Skills) --- */
@@ -220,8 +236,12 @@ h3 {
 }
 
 @keyframes rotateGear {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* --- Sección 4 (Projects) --- */
@@ -252,7 +272,7 @@ h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Alinear contenido */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -271,7 +291,7 @@ h3 {
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
-  flex-grow: 1; /* Hace que el párrafo ocupe espacio */
+  flex-grow: 1;
 }
 .project p.stack {
   font-size: 0.9rem;
@@ -280,10 +300,10 @@ h3 {
   flex-grow: 0;
 }
 .project .button {
-  margin-top: 20px; /* Asegura espacio antes del botón */
+  margin-top: 20px;
 }
 
-/* --- Botón Universal --- */
+/* --- Botón --- */
 .button {
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -295,14 +315,14 @@ h3 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #111; /* Color de texto oscuro para buen contraste */
+  color: #111;
   gap: 10px;
   font-weight: 600;
   border: 2px solid var(--accent-color);
   outline: none;
   overflow: hidden;
   font-size: 1rem;
-  text-decoration: none; /* Añadido para los <a> */
+  text-decoration: none;
 }
 .icon {
   width: 20px;
@@ -424,14 +444,12 @@ h3 {
   border-radius: 4px;
   margin-bottom: 20px;
 }
-/* NUEVA REGLA CSS AÑADIDA
-*/
+
 .testimonial .testimonial-icon {
-  font-size: 5rem; /* Tamaño grande */
+  font-size: 5rem;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
-/* Estilos para la cita */
 .testimonial blockquote {
   font-size: 1.1rem;
   font-style: italic;
@@ -481,7 +499,7 @@ h3 {
   font-size: 2rem;
   margin-right: 15px;
 }
-/* Colores hover específicos */
+
 .social-links a.social-link-linkedin:hover {
   color: #0073b1;
   background-color: rgba(0, 115, 177, 0.1);
@@ -520,10 +538,9 @@ h3 {
 /* ########################################## */
 
 @media screen and (max-width: 900px) {
-  /* --- Ajustes de Navegación Móvil --- */
   .nav-links {
     position: fixed;
-    left: -100%; /* Oculto fuera de la pantalla */
+    left: -100%;
     top: var(--navbar-height);
     flex-direction: column;
     background-color: var(--card-color);
@@ -535,16 +552,15 @@ h3 {
     padding-top: 20px;
   }
   .nav-links.active {
-    left: 0; /* Lo trae a la pantalla */
+    left: 0;
   }
   .nav-links li a {
-    font-size: 1.5rem; /* Letras más grandes en menú móvil */
+    font-size: 1.5rem;
   }
   .hamburger {
-    display: block; /* Muestra el icono de hamburguesa */
+    display: block;
   }
 
-  /* Animación del icono 'X' */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -555,7 +571,6 @@ h3 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* --- Ajustes de Secciones --- */
   .section {
     padding: 80px 15px;
     font-size: 1.5rem;
@@ -570,18 +585,17 @@ h3 {
     font-size: 1.2rem;
   }
 
-  /* --- Ajustes de Tarjetas --- */
   .skills-container,
   .projects-container,
   .experience-container {
-    flex-direction: column; /* Apila las tarjetas */
+    flex-direction: column;
     align-items: center;
   }
 
   .skill,
   .project,
   .exp {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
     max-width: 500px;
   }
 
@@ -593,7 +607,6 @@ h3 {
     width: 100%;
   }
 
-  /* --- Ajustes de Contacto --- */
   .social-links ul {
     flex-direction: column;
     gap: 15px;
@@ -602,7 +615,6 @@ h3 {
     justify-content: center;
   }
 
-  /* Ocultar flecha en móvil (opcional, puede estorbar) */
   .scroll-arrow {
     display: none;
   }

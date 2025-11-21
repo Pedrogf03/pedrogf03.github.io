@@ -79,7 +79,7 @@ const translations = {
     test_title: "Testimonios",
     test_subtitle: "Lo que clientes y compañeros dicen de mi trabajo:",
     test1_quote:
-      '"Pedro ha demostrado una gran capacidad de adaptación y una sólida base técnica en Java y Spring, resolviendo incidencias de forma eficaz y proactiva."',
+      '"Pedro ha realizado las prácticas del Grado Superior en Desarrollo de Aplicaciones Multiplataforma en Knowmad Mood siempre con muy buena aptitud y predisposición."',
     test1_cite: "— Tutor de Prácticas, Knowmad Mood",
     test1_button: "Ver carta completa (PDF)",
     test2_quote:
@@ -110,7 +110,6 @@ const translations = {
     home_cta_button: "See my projects",
 
     about_title: "About Me",
-    // He recuperado el texto en inglés de tu primer prompt
     about_p1:
       "I’m a software developer with a strong foundation in Java, Spring Boot, and SQL databases, complemented by experience in Flutter and cross-platform development. I focus on building scalable, maintainable applications with clean architecture and high-quality code.",
     about_p2:
@@ -175,7 +174,7 @@ const translations = {
     test_title: "Testimonials",
     test_subtitle: "What clients and colleagues say about my work:",
     test1_quote:
-      '"Pedro has shown a great capacity for adaptation and a solid technical foundation in Java and Spring, resolving incidents effectively and proactively."',
+      '"Pedro has completed his internship for the Higher Level Vocational Training in Multiplatform Application Development at Knowmad Mood, always demonstrating excellent aptitude and a positive attitude."',
     test1_cite: "— Internship Tutor, Knowmad Mood",
     test1_button: "View full letter (PDF)",
     test2_quote:
