@@ -52,8 +52,8 @@ const translations = {
     project_ordeplay_desc: "Aplicación web para comprar videojuegos online y crear listas personalizadas.",
     project_ordeplay_stack: "<strong>Stack:</strong> PHP, HTML, CSS, JavaScript, jQuery, Ajax, MySQL",
     project_aibuddy_title: "AI Buddy Bot para Discord",
-    project_aibuddy_desc: "Bot para Discord que utiliza Llama 3.3 70B para generar respuestas a los usuarios.",
-    project_aibuddy_stack: "<strong>Stack:</strong> Python, Discord.py, LangChain Core & Groq API.",
+    project_aibuddy_desc: "Bot para Discord que utiliza modelos de IA generativa para responder en el chat.",
+    project_aibuddy_stack: "<strong>Stack:</strong> Python, Discord.py, LangChain Core, Groq API & Gemini API.",
 
     exp_title: "Experiencia",
     exp_subtitle: "He trabajado en varias empresas, destacando:",
@@ -148,8 +148,8 @@ const translations = {
       "Web Application for purchasing video games online. Also allows users to create personalized game lists.",
     project_ordeplay_stack: "<strong>Stack:</strong> PHP, HTML, CSS, JavaScript, jQuery, Ajax, MySQL",
     project_aibuddy_title: "AI Buddy Bot for Discord",
-    project_aibuddy_desc: "Bot for Discord that uses Llama 3.3 70B to generate responses to users.",
-    project_aibuddy_stack: "<strong>Stack:</strong> Python, Discord.py, LangChain Core & Groq API.",
+    project_aibuddy_desc: "Bot for Discord that uses generative AI models to respond in chat.",
+    project_aibuddy_stack: "<strong>Stack:</strong> Python, Discord.py, LangChain Core, Groq API & Gemini API.",
 
     exp_title: "Experience",
     exp_subtitle: "I have worked in various companies, such as:",
